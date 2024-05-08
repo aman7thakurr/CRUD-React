@@ -1,50 +1,61 @@
 .login-form {
-  height: 500px;
-    margin-top: 50px;
-    width: 600px;
-    max-width: 600px;
-    padding: 30px;
-    background: linear-gradient(to bottom right, #ffffff, #f2f2f2);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  padding: 30px;
+  background: linear-gradient(to bottom right, #ffffff, #f2f2f2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Ensure it doesn't exceed the width of the viewport */
+  width: 100%; /* Ensure it takes full width of its container */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+  font-size: 24px; /* Adjust font size for smaller screens */
+}
+
+.login-form label {
+  font-weight: bold;
+  color: black;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  margin-top: 15px; /* Reduce top margin for smaller screens */
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login-form button {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#c {
+  font-weight: 650;
+  font-size: 40px;
+}
+
+/* Media Query for small screens */
+@media screen and (max-width: 576px) {
+  .login-form {
+    padding: 20px; /* Adjust padding for smaller screens */
   }
   
   .login-form h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-    cursor: pointer;
+    font-size: 20px; /* Adjust font size for smaller screens */
   }
-  
-  .login-form label {
-    font-weight: bold;
-    color: black;
-    display: block; /* Ensure labels are displayed as blocks */
-    text-align: left; /* Align labels to the left */
-    margin-bottom: 5px; /* Add some space between label and input */
-  }
-  
-  .login-form input {
-    margin-top: 30px;
-    height: 40px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 8px;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  
-  .login-form button {
-    margin-top: 20px;
-    width: 100%;
-    height: 40px;
-    font-size: 16px;
-    border-radius: 5px;
-  }
-  
-  #c {
-    font-weight: 650;
-    font-size: 40px;
-  }
-  
+}

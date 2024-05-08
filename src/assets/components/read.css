@@ -1,7 +1,39 @@
-.table-div{
-    width: 800px;
-
-}
-.create{
+.table-div {
+    padding: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    /* background-color: #f2f2f2; */
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .create {
     cursor: pointer;
-}
+  }
+  
+  @media screen and (max-width: 576px) {
+    .table th,
+    .table td {
+      padding: 2px;
+      font-size: 12px; /* Decrease font size for smaller screens */
+    }
+  
+    .create h2 {
+      font-size: 16px; /* Decrease font size for smaller screens */
+    }
+  }
+  
