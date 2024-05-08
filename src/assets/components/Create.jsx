@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import "../components/create.css";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 const Create = () => {
   const [name,setName] = useState('');
@@ -32,7 +33,10 @@ const Create = () => {
   return (
     <Container>
       <div className="login-form">
-        <h2><span id='c'>C</span>reate</h2>
+       <div className='d-flex mx-2 justify-content-between'>
+        <h2 className='mx-2'><span id='c'>C</span>reate</h2>
+      <Link to='/read'>  <h2 className='mx-2'><span id='c'>U</span>pdate</h2></Link>
+      </div>
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Name</Form.Label>

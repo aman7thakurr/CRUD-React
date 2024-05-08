@@ -1,9 +1,9 @@
-{
+{ "homepage": "https://aman7thakurr.github.io/CRUD-React/",
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://aman7thakurr.github.io/CRUD-React/",
+ 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
